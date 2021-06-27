@@ -1,0 +1,99 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.flex-cont-list-m {
+    display: none;
+}
+.flex-cont {
+    padding: 0px 22px 0px 22px;
+    height: 44px;
+    background-color: rgb(44, 44, 44);
+    align-items: center;
+    opacity: 95%;
+}
+.flex-cont-list {
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    font-size: 15px;
+    align-items: center;
+}
+.flex-item > img{
+    height: 22px;
+}
+.flex-item {
+    color: #fff;
+    opacity: 80%;
+    font-weight: 300;
+    
+}
+.advice-grid-cont {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+.advice-grid-item {
+    padding: 12px 12px 12px 12px;
+    text-align: center;
+    letter-spacing: -.022em;
+    background-color: #f5f5f7;
+    grid-column: 1 /1;
+    grid-row: 1 / 1;
+}
+.advice-grid-item span {
+    color: #1d1d1f;
+}
+.advice-grid-item span > .advice-item-blue {
+    color: #06c;
+}
+
+.flex-menu-m{
+    height: auto;
+    padding: 0px 44px 0px 44px;
+    background-color: rgb(44, 44, 44);
+    opacity: 95%;
+}
+.flex-menu-cont {
+    display: flex;
+    height: auto;
+    flex-direction:column;
+    text-decoration: none;
+    list-style: none;
+    font-size: 15px;
+    align-items: left;
+}
+.flex-menu-item {
+    padding: 12px;
+    height: 44px;
+    color: #fff;
+    opacity: 80%;
+    border-bottom: 1px solid #fff;
+}
+.flex-menu-item:nth-child(2) {
+    margin-bottom: 22px;
+}
+
+@media only screen and ( max-width: 700px ){
+    .flex-cont-list {
+        display: none;
+    }
+    .flex-cont-list-m {
+        height: 44px;
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+        list-style: none;
+        font-size: 15px;
+        align-items: center;
+    }
+    .flex-item-m > img{
+        height: 22px;
+    }
+    .flex-item-m {
+        color: #fff;
+        opacity: 80%;
+        font-weight: 200;
+    }
+}
